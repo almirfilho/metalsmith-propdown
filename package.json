@@ -1,0 +1,42 @@
+{
+  "name": "metalsmith-propdown",
+  "version": "0.0.1",
+  "description": "A metalsmith plugin to convert a property value in markdown to HTML.",
+  "main": "src/plugin.js",
+  "scripts": {
+    "grunt": "grunt",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/almirfilho/metalsmith-propdown.git"
+  },
+  "keywords": [
+    "metalsmith",
+    "plugin",
+    "markdown",
+    "property"
+  ],
+  "author": "Almir Filho <almir@almirfilho.com>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/almirfilho/metalsmith-propdown/issues"
+  },
+  "homepage": "https://github.com/almirfilho/metalsmith-propdown#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-mocha-test": "^0.12.7",
+    "load-grunt-tasks": "^3.5.0",
+    "metalsmith": "^2.1.0",
+    "metalsmith-collections": "^0.7.0",
+    "mocha": "^2.4.5"
+  },
+  "engines": {
+    "node": ">=5"
+  }
+}
