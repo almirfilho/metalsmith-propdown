@@ -74,7 +74,7 @@ describe('Generation', () => {
       property: 'propertyname'
     }).build((err, files) => {
       expect(files['post1.html']).to.have.property('excerpt', 'Some __markdown__ content to _convert_ from post 1.');
-      expect(files['post2.html']).to.have.property('excerpt', 'Some __markdown__ content to _convert_ from post 2.');
+      expect(files['post2.html']).to.have.property('excerpt', 'Some __markdown__ \'content\' to _convert_ from post 2.');
       done();
     });
   });
@@ -86,6 +86,28 @@ describe('Generation', () => {
     }).build((err, files) => {
       expect(files['post1.html']).to.have.property('excerpt').to.contain('<em>', '<strong>', 'post 1');
       expect(files['post2.html']).to.have.property('excerpt').to.contain('<em>', '<strong>', 'post 2');
+      done();
+    });
+  });
+
+  it('should pass markdownOptions to marked (1)', done => {
+    metalpipeline({
+      collection: 'posts',
+      property: 'excerpt',
+      markdownOptions: { smartypants: false }
+    }).build((err, files) => {
+      expect(files['post2.html']).to.have.property('excerpt').to.contain('&#39;');
+      done();
+    });
+  });
+
+  it('should pass markdownOptions to marked (2)', done => {
+    metalpipeline({
+      collection: 'posts',
+      property: 'excerpt',
+      markdownOptions: { smartypants: true }
+    }).build((err, files) => {
+      expect(files['post2.html']).to.have.property('excerpt').to.not.contain('&#39;');
       done();
     });
   });

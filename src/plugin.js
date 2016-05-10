@@ -19,6 +19,8 @@ module.exports = options => {
     const collection = options.collection;
     const property = options.property;
 
+    if(options.markdownOptions) marked.setOptions(options.markdownOptions);
+
     metadata.collections[collection].forEach(file => {
       if(property in file) file[property] = marked(file[property]);
     });
