@@ -96,7 +96,7 @@ Always implement tests for whatever you're adding to the project. Thanks!
 [travis]: https://travis-ci.org/almirfilho/metalsmith-propdown
 [travis-badge]: https://travis-ci.org/almirfilho/metalsmith-propdown.svg?branch=master
 [npm]: https://www.npmjs.com/package/metalsmith-propdown
-[npm-badge]: https://img.shields.io/npm/v/metalsmith-propdown.svg?maxAge=2592000
+[npm-badge]: https://img.shields.io/npm/v/metalsmith-propdown.svg?maxAge=3600
 [metal]: http://www.metalsmith.io/
 [collections]: https://github.com/segmentio/metalsmith-collections
 [marked]: https://github.com/chjj/marked
