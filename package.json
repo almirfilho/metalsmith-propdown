@@ -1,6 +1,6 @@
 {
   "name": "metalsmith-propdown",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A metalsmith plugin to convert a property value from markdown to HTML.",
   "main": "src/plugin.js",
   "scripts": {
