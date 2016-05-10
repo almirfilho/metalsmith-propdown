@@ -15,7 +15,8 @@
     "metalsmith",
     "plugin",
     "markdown",
-    "property"
+    "property",
+    "conversion"
   ],
   "author": "Almir Filho <almir@almirfilho.com>",
   "contributors": [],
